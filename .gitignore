@@ -36,4 +36,4 @@ db
 .venv
 apps/migrations
 !apps/migrations/__init__.py
-root/__pycache__/
+__pycache__
