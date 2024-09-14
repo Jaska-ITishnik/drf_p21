@@ -2,7 +2,6 @@ name: Drf CI/CD Deployment
 
 on:
   push:
-    branches: [ main ]
 
 jobs:
   deploy:
