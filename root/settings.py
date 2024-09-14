@@ -139,7 +139,7 @@ REST_FRAMEWORK = {
     # ]
 }
 SPECTACULAR_SETTINGS = {
-    'TITLE': 'Jasurbek API',
+    'TITLE': 'Jasurbek test API',
     'DESCRIPTION': 'IMPROVE MY DJANGO REST FRAMEWORK SKILLS🚀',
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
