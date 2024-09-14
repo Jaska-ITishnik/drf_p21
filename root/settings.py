@@ -66,7 +66,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME':'drf_p21_db',
         'USER':'postgres',
-        'PASSWORD':'100',
+        'PASSWORD':'1',
         'HOST':'localhost',
         'PORT': 5438
     }
