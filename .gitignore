@@ -33,3 +33,7 @@ venv
 TODO
 db
 .env
+.venv
+apps/migrations
+!apps/migrations/__init__.py
+root/__pycache__/
