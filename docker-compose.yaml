@@ -1,0 +1,29 @@
+services:           # All service will be there
+  backend_service:  # one of the services name=backend_service
+    build: .
+    image: jasurbek2004/drf_backend
+    env_file:
+      - .env
+    ports:
+      - '8000:8000'
+    depends_on:
+      - postgres_service
+
+  postgres_service:
+    image: postgres:alpine
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_PASSWORD=${PG_PASSWORD}
+    ports:
+      - 5432:${PG_PORT}
+    volumes:
+      - drf_p21_pg_data:/var/lib/postgresql/data
+volumes:
+  drf_p21_pg_data: {}
+
+# docker compose up -d
+# docker compose up --build
+# docker compose down
+# docker compose down -v (delete with volume)
+# docker compose exec -itu postgres postgres_service psql -c 'create database db_name;'
