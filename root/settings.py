@@ -43,7 +43,7 @@ ROOT_URLCONF = 'root.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
+        'DIRS': []
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -64,11 +64,11 @@ AUTH_USER_MODEL = 'apps.User'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':'drf_p21_db',
+        'NAME':'drf_p23',
         'USER':'postgres',
-        'PASSWORD':'1',
+        'PASSWORD':'100',
         'HOST':'localhost',
-        'PORT': 5438
+        'PORT': 5432
     }
 }
 
